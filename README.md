@@ -1,6 +1,6 @@
 # infinite
 
-A new Flutter project.
+This is my first flutter UI design.
 
 ## Getting Started
 
