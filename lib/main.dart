@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 
+import 'SplashScreen.dart';
+// import 'package:infinite/SplashScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SplashScreen(),
     );
   }
 }
@@ -45,19 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
     backgroundColor: Colors.transparent,
-      appBar: AppBar(
-        // title: Text("INIFINTE"),
-      ),
-      body:Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/hacking wallpaper.jpg"),
-            colorFilter: ColorFilter.mode(Colors.black38.withOpacity(0.8), BlendMode.darken),
-            fit: BoxFit.cover,
-          )
-        ),
-      ) ,
 
+      body:Container(
+        color: Colors.pink,
+      ) ,
     );
   }
 }
