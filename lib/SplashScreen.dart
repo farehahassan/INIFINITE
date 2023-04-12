@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:new_app/My_Login.dart';
 
 import 'main.dart';
 
@@ -15,12 +16,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-              builder: (context) => MyHomePage(
-                    title: '',
+              builder: (context) => const My_login(
+
                   )));
     }
     );
@@ -43,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 250,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Text("INFINITE" , style: GoogleFonts.bebasNeue(
