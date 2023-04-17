@@ -43,7 +43,7 @@ class _MyLoginState extends State<My_login> {
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     TextField(
@@ -55,13 +55,13 @@ class _MyLoginState extends State<My_login> {
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10))),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Sign In",
                           style: TextStyle(
                               fontWeight: FontWeight.w700, fontSize: 27),
@@ -71,15 +71,13 @@ class _MyLoginState extends State<My_login> {
                           backgroundColor: Colors.black54,
                           child: IconButton(
                             color: Colors.white,
-                            icon: Icon(Icons.arrow_forward),
-                            onPressed: () {
-
-                            },
+                            icon: const Icon(Icons.arrow_forward),
+                            onPressed: () {},
                           ),
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
@@ -87,25 +85,26 @@ class _MyLoginState extends State<My_login> {
                       children: [
                         TextButton(
                             onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=> My_signin()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => My_signin()));
                             },
-                            child: Text(
-                              "Sign Up",
+                            child: const Text(
+                              "Don't have account? Sign Up",
                               style: TextStyle(
-                                decoration: TextDecoration.underline,
-                                fontSize: 20,
-                                color: Colors.black54
-                              ),
+                                  decoration: TextDecoration.underline,
+                                  fontSize: 15,
+                                  color: Colors.black54),
                             )),
                         TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "Forget Password",
                               style: TextStyle(
                                   decoration: TextDecoration.underline,
-                                  fontSize: 20,
-                                  color: Colors.brown
-                              ),
+                                  fontSize: 13,
+                                  color: Colors.brown),
                             )),
                       ],
                     )
